@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "app",
+    "usuarios",
 ]
 
 MIDDLEWARE = [
@@ -70,6 +71,21 @@ TEMPLATES = [
         },
     },
 ]
+
+
+
+LOGIN_URL = "login"
+LOGIN_REDIRECT_URL = "home"
+LOGOUT_REDIRECT_URL = "login"
+
+
+
+
+
+
+
+
+
 
 WSGI_APPLICATION = "backend.wsgi.application"
 
